@@ -287,22 +287,24 @@
       </a></li>
     </ul>
     </div>
-    <form action="" class="form-subscription">
+    <form class="form-subscription">
       <div class="subscription">
         <label for="subscription" class="subscription-label">Підпішіться на розсилку</label>
         <input type="email" name="subscription" id="subscription" class="subscription-input" placeholder="E-mail">
       </div>
-      <button type="submit" class="footer-button">Підписатися 
-        <svg width="24px" height="24px" class="subscription-icon">
-          <use href="./images/icon-sprite.svg#send"></use>
-        </svg>
-      </button>
+      <div class="wrap-submit">
+        <button type="submit" class="footer-button">Підписатися 
+          <svg width="24px" height="24px" class="subscription-icon">
+            <use href="./images/icon-sprite.svg#send"></use>
+          </svg>
+        </button>
+      </div>
     </form>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <h2 class="modal-name">Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="modal-name">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
           <div class="modal-wrap">
             <label for="user-name" class="modal-label">Ім'я</label>
@@ -325,7 +327,7 @@
               <use href="./images/icon-sprite.svg#email"></use>
             </svg>
           </div>
-          <div class="modal-wrap">
+          <div class="modal-wrap wrap-textarea">
             <label for="coments" class="modal-label">Коментар</label>
             <textarea name="coments" id="coments" class="modal-textarea" placeholder="Введіть текст"></textarea>
           </div>
